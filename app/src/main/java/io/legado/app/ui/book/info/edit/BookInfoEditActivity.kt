@@ -108,6 +108,7 @@ class BookInfoEditActivity :
                 else -> 0
             }
         )
+        spRating.setSelection(book.rating)
         tieCoverUrl.setText(book.getDisplayCover())
         tieBookIntro.setText(book.getDisplayIntro())
         upCover()
@@ -138,6 +139,8 @@ class BookInfoEditActivity :
         val customIntro = tieBookIntro.text?.toString()
         book.customIntro = if (customIntro == book.intro) null else customIntro
         BookHelp.updateCacheFolder(oldBook, book)
+        val bookRating = spRating.selectedItemPosition
+        book.rating = bookRating
         viewModel.saveBook(book) {
             setResult(RESULT_OK)
             finish()

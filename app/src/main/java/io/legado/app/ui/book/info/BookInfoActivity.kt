@@ -487,6 +487,7 @@ class BookInfoActivity :
         tvAuthor.text = getString(R.string.author_show, book.getRealAuthor())
         tvOrigin.text = getString(R.string.origin_show, book.originName)
         tvLasted.text = getString(R.string.lasted_show, book.latestChapterTitle)
+        tvRating.text = getString(R.string.rating_s, book.rating.toString())
         showBookIntro(book)
         if (book.isWebFile) {
             llToc.gone()

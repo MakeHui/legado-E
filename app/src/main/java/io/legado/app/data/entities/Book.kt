@@ -72,6 +72,9 @@ data class Book(
     // 类型,详见BookType
     @ColumnInfo(defaultValue = "0")
     var type: Int = BookType.text,
+    // 评分
+    @ColumnInfo(defaultValue = "0")
+    var rating: Int = 0,
     // 自定义分组索引号
     @ColumnInfo(defaultValue = "0")
     var group: Long = 0,
