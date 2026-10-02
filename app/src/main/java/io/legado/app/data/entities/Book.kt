@@ -65,6 +65,9 @@ data class Book(
     var customCoverUrl: String? = null,
     // 简介内容(书源获取)
     var intro: String? = null,
+    // 备注
+    @ColumnInfo(defaultValue = "")
+    var remark: String = "",
     // 简介内容(用户修改)
     var customIntro: String? = null,
     // 自定义字符集名称(仅适用于本地书籍)

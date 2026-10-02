@@ -597,6 +597,7 @@
     <string name="group_s">Group: %s</string>
     <string name="toc_s">Chapters: %s</string>
     <string name="rating_s">Rating: %s</string>
+    <string name="remark_s">Remark: %s</string>
     <string name="enable_explore">Enable Discovery</string>
     <string name="disable_explore">Disable Discovery</string>
     <string name="enable_selection">Enable selected</string>
@@ -1346,4 +1347,5 @@
     <string name="auto_update_summary">每天自动检查软件是否更新</string>
     <string name="shibboleth">口令</string>
     <string name="bookshelf_px_6">By rating</string>
+    <string name="book_remark">Remark</string>
 </resources>
