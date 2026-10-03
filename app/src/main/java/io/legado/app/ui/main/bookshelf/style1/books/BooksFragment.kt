@@ -235,9 +235,10 @@ class BooksFragment() : BaseFragment(R.layout.fragment_books),
                         o1.author.cnCompare(o2.author)
                     }
 
-                    6 -> list.sortedByDescending {
-                        it.rating
-                    }
+                    6 -> list.sortedWith(
+                        compareByDescending<Book> { it.rating }
+                            .thenBy { it.order }
+                    )
 
                     else -> list.sortedByDescending { it.durChapterTime }
                 }
