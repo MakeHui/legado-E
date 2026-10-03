@@ -339,6 +339,7 @@ class BookInfoActivity :
             }
 
             R.id.menu_top -> viewModel.topBook()
+            R.id.menu_bottom -> viewModel.bottomBook()
             R.id.menu_set_source_variable -> setSourceVariable()
             R.id.menu_set_book_variable -> setBookVariable()
             R.id.menu_copy_book_url -> viewModel.getBook()?.let {
